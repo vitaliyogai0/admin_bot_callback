@@ -9,7 +9,7 @@ SECRET_KEY = 'тут ваш секретный ключ для колбека'
 
 API_VERSION = 5.101
 
-bot = vk.API(vk.Session(VK_TOKEN), v = API_VERSION)
+bot = vk.API(access_token = VK_TOKEN, v = API_VERSION)
 
 def add_friend(user_id):
 	bot.friends.add(user_id = user_id)
